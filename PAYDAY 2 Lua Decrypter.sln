@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAYDAY 2 Lua Decrypter", "PAYDAY 2 Lua Decrypter\PAYDAY 2 Lua Decrypter.csproj", "{1AF48D05-58DE-45C4-8AD3-64B2868F3D1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AF48D05-58DE-45C4-8AD3-64B2868F3D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF48D05-58DE-45C4-8AD3-64B2868F3D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF48D05-58DE-45C4-8AD3-64B2868F3D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF48D05-58DE-45C4-8AD3-64B2868F3D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33C39285-93B5-4DC5-87B6-218DD0951A80}
+	EndGlobalSection
+EndGlobal
