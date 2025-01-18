@@ -2,6 +2,8 @@
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
+using Microsoft.Win32;
+using Ookii.Dialogs.Wpf;
 
 namespace Pd2LuaDecrypterCS
 {
@@ -16,7 +18,7 @@ namespace Pd2LuaDecrypterCS
         static void Main(string[] args)
         {
             Console.Title = "PAYDAY 2 Lua Decrypter";
-            Console.WriteLine("PD2 Lua Decrypter - Written by Sora\n\n");
+            Console.WriteLine("PD2 Lua Decrypter - Written by Sora and Modified by Test1\n\n");
 
             foreach (string argument in args)
             {
@@ -29,10 +31,9 @@ namespace Pd2LuaDecrypterCS
 
             Console.WriteLine("Awaiting input.\nFirst select the folder where the encrypted files are.");
 
-            FolderBrowserDialog fbdEncrypt = new FolderBrowserDialog();
-            fbdEncrypt.Description = "First select the folder where the encrypted files are.";
-
-            if (fbdEncrypt.ShowDialog() == DialogResult.OK)
+            VistaFolderBrowserDialog fbdEncrypt = new();
+            Console.WriteLine("First select the folder where the encrypted files are.");
+            if (fbdEncrypt.ShowDialog() == true)
             {
                 encryptedFilesPath = fbdEncrypt.SelectedPath;
                 Console.WriteLine("Encrypted folder set: " + encryptedFilesPath);
@@ -44,14 +45,13 @@ namespace Pd2LuaDecrypterCS
                 return;
             }
 
-            FolderBrowserDialog fbdDecrypt = new FolderBrowserDialog();
-            fbdDecrypt.Description = "Next, select the folder where the decrypted files will be.";
+            VistaFolderBrowserDialog fbdDecrypt = new();
+            Console.WriteLine("Next, select the folder where the decrypted files will be.");
             fbdDecrypt.SelectedPath = encryptedFilesPath;
-
-            if (fbdDecrypt.ShowDialog() == DialogResult.OK)
+            if (fbdDecrypt.ShowDialog() == true)
             {
                 decryptedFilesPath = fbdDecrypt.SelectedPath;
-                Console.WriteLine("Decrypted folder set: " + decryptedFilesPath);
+                Console.WriteLine("Dncrypted folder set: " + encryptedFilesPath);
             }
 
             if (decryptedFilesPath == null)
