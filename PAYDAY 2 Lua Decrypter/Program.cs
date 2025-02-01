@@ -51,7 +51,7 @@ namespace Pd2LuaDecrypterCS
             if (fbdDecrypt.ShowDialog() == true)
             {
                 decryptedFilesPath = fbdDecrypt.SelectedPath;
-                Console.WriteLine("Dncrypted folder set: " + encryptedFilesPath);
+                Console.WriteLine("Decrypted folder set: " + decryptedFilesPath);
             }
 
             if (decryptedFilesPath == null)
